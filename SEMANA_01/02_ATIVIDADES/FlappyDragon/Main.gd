@@ -1,9 +1,12 @@
 extends Node # instancia a classe Node2D
-
+# Variável status refere-se ao status do jogador (se ele está ou não jogando). 
 var status = 1
+# Variável vscore refere-se ao score do jogador. Quantas vezes ele passou pelo tronco.
 var vscore = 0
-var x = 1.5 
-var y = 1.5 
+# Variável x refere-se a velocidade horizontal do dragão.
+var x = 4 #Mudei a velocidade de 1.5 para 4
+# Variável y refere-se a velocidade de queda do dragão.
+var y = 0 # Mudei para 0
 
 # executa essa função ao carregar o jogo
 func _ready():
