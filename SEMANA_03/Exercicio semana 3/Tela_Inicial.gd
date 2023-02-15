@@ -11,7 +11,7 @@ var numero1
 var numero2
 var numero3
 
-# Lista pronta de números
+# Função que mostra os tipos de IA ao pressionar o botão de lista pronta
 func _on_Button_Numero_Pronto_pressed():
 	$ColorRect/TextEdit.text = String(tipos_IA)
 	
