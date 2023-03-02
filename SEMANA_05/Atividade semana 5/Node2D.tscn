@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 456.0
+margin_top = 78.0
+margin_right = 635.0
+margin_bottom = 136.0
+text = "SALVAR CONTEÚDOS"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 459.0
+margin_top = 170.0
+margin_right = 616.0
+margin_bottom = 222.0
+text = "MOSTRAR LISTA NÚMERO"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 458.0
+margin_top = 259.0
+margin_right = 619.0
+margin_bottom = 306.0
+text = "VERIFICAÇÃO DO NOME"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 78.0
+margin_top = 50.0
+margin_right = 363.0
+margin_bottom = 182.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 77.0
+margin_top = 273.0
+margin_right = 364.0
+margin_bottom = 399.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 257.0
+margin_top = 123.0
+margin_right = 380.0
+margin_bottom = 137.0
+rect_scale = Vector2( 1.41327, 3 )
+rect_pivot_offset = Vector2( 293, 56 )
+text = "INSIRA SEU NOME"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 97.0
+margin_top = 219.0
+margin_right = 229.0
+margin_bottom = 233.0
+rect_scale = Vector2( 1.74576, 3 )
+text = "DIGITE UM NÚMERO"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
