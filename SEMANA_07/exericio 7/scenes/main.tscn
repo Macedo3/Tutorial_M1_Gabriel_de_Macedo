@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://script/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/darkPurple.png" type="Texture" id=4]
+[ext_resource path="res://Assets/back.png" type="Texture" id=5]
+
+[node name="main" type="Node2D"]
+
+[node name="DarkPurple" type="Sprite" parent="."]
+position = Vector2( 1012.75, 582 )
+scale = Vector2( 8.33789, 5.68359 )
+texture = ExtResource( 4 )
+
+[node name="BackButtom" type="Button" parent="."]
+margin_left = 1091.0
+margin_top = 38.0
+margin_right = 1360.0
+margin_bottom = 136.0
+icon = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 8, 211 )
+
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2, 8 )
+script = ExtResource( 1 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 28, -227 )
+script = ExtResource( 1 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 87, 28 )
+script = ExtResource( 1 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 150, -225 )
+script = ExtResource( 1 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 201, -63 )
+script = ExtResource( 1 )
+
+[node name="Enemy6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 249, -116 )
+script = ExtResource( 1 )
+
+[node name="Enemy7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 81, -89 )
+script = ExtResource( 1 )
+
+[node name="Enemy8" parent="." instance=ExtResource( 2 )]
+position = Vector2( -14, -112 )
+script = ExtResource( 1 )
+
+[node name="Enemy9" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4, 89 )
+script = ExtResource( 1 )
+
+[node name="Enemy10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 286, -19 )
+script = ExtResource( 1 )
+
+[node name="Enemy11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 235, -250 )
+script = ExtResource( 1 )
+
+[node name="Enemy12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 193, 38 )
+script = ExtResource( 1 )
+
+[node name="Enemy13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 77, -167 )
+script = ExtResource( 1 )
+
+[node name="Enemy14" parent="." instance=ExtResource( 2 )]
+position = Vector2( -34, -213 )
+script = ExtResource( 1 )
+
+[node name="Enemy15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 355, -100 )
+script = ExtResource( 1 )
+
+[node name="Enemy16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 345, 18 )
+script = ExtResource( 1 )
+
+[node name="Enemy17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 384, -219 )
+script = ExtResource( 1 )
+
+[node name="Enemy18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 164, -144 )
+script = ExtResource( 1 )
+
+[node name="Enemy19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 272, 79 )
+script = ExtResource( 1 )
+
+[node name="Enemy20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 302, -226 )
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="BackButtom" to="Player" method="_on_BackButtom_pressed"]
