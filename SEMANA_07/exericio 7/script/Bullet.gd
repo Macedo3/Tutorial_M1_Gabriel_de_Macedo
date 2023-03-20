@@ -13,5 +13,4 @@ func _physics_process(delta):
 	# Deletando o inimigo após ele receber dano
 	if CollidedObject:
 		CollidedObject.get_collider().queue_free()
-	# Deletando a bala
-	queue_free()
+
