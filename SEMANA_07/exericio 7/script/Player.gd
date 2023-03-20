@@ -17,7 +17,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("fire"):
 		var Bullet_Instance = bullet.instance()
 		# Usando o vector2 para que a bala nasça na mesma posição x, porém acima do personagem
-		bullet.instance().position = Vector2(position.x, position.y - 60)
+		Bullet_Instance.position = Vector2(position.x, position.y - 60)
 		get_tree().get_root().add_child(Bullet_Instance)
 
 
