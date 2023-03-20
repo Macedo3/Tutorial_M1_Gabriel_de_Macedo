@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 # Transformando a bala em objeto do game
-var bullet = preload("res://Assets/caracter-removebg-preview.png")
+var bullet = preload("res://scenes/Bullet.tscn")
 var speed = 400
 
 
